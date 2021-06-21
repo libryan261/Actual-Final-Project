@@ -1,0 +1,21 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this site",
+      "description": "Some additional details about the website",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-06-21T10:57:26-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Final Project",
+      "description": "Welcome to the website. I hope you enjoy it! Hello?\n",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-06-21T10:57:54-04:00"
+    }
+  ],
+  "collections": []
+}
