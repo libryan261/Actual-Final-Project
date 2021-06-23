@@ -56,8 +56,5 @@ vec_updated <- factor(vec)
 
 ```
 
-aes(x = after_stat(count/sum(count)))
 
-
-facet_wrap(~`Rating of Online Class experience`)
 
