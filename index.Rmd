@@ -1,21 +1,17 @@
 ---
-title: "Final Project"
+title: "COVID-19 Effects on Mental Health/Behaviors of Both Adults and Students"
 description: |
-  Welcome to the website. I hope you enjoy it! Hello?
+  This is where I will be showcasing my Final Project for David Kane's Free Data Science Bootcamp. For my final project, I wanted to do something that was relatable to me and was something that I experienced throughout the Pandemic because this world event is something that I'll probably only experience once in my lifetime. 
 site: distill::distill_website
----
 
+---
+### Goals
+
+*The main goal of this project is to actually create a website that will contain more data about mental health in general. I chose to start with COVID-19 data because it's the most recent event as to when this website was created. This little bit of data is just a start to more data regarding mental health disorders, treatments, statistics, etc. 
+
+*The goal of this final project though is to see the effects or relationships between the student environment COVID affected and their behaviors.
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-library(distill)
-library(tidyverse)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
 
 ```
 

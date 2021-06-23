@@ -7,6 +7,12 @@ navbar:
   right:
     - text: "Home"
       href: index.html
+    - text: "Student Effect"
+      menu:
+        - text: "Student Data A"
+          href: data_A.html
+        - text: "Student Data B"
+          href: data_B.html
     - text: "About"
       href: about.html
 output: distill::distill_article

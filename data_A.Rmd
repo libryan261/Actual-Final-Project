@@ -1,0 +1,63 @@
+---
+title: "Relationship Between Online Class Experience and Self Studying"
+description: |
+ With schools transitioning into online learning as a result of the pandemic, many students have struggled transitioning into a new learning environment. As a result, lots of students haven't been able to learn the content of a course through the traditional teaching time, which led many to adapt to self-studying and relying on themselves to learn the content. This graph here analyzes the relationship between those who had different Online class experiences and their time spent on self learning the material.
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+library(janitor)
+library(ggthemes)
+library(data.table)
+library(distill)
+library(ggdist)
+
+raw_data <- read_csv(file = "COVID-19 Survey Student Responses.csv.xls")
+
+
+
+```
+
+```{r, echo = FALSE}
+clean_data <- raw_data %>%
+  filter(`Rating of Online Class experience` %in% c("Excellent", "Average", "Good", "Very poor")) %>%
+  mutate(`Rating of Online Class experience` = factor(`Rating of Online Class experience`, levels = vec)) %>%
+  select(`Rating of Online Class experience`, `Time spent on self study`) %>%
+  group_by(`Rating of Online Class experience`)
+  
+  
+
+
+clean_data %>%
+  ggplot(mapping = aes( x = `Time spent on self study`, fill = `Rating of Online Class experience`))+
+  stat_slab(position = "dodge") +
+  labs(title = "Relationship between Online Class Experience and Self Study Time",
+       subtitle = "Students that don't adapt to Online learning as well as others tend to spend more time self-teaching material usually covered in a classroom",
+       x = "Time Spent On Self Study (Hours)",
+       y = "") +
+  theme_minimal() 
+  
+
+
+
+
+
+vec <- c("Very poor", "Average", "Good", "Excellent")
+  
+
+
+vec_updated <- factor(vec)
+
+
+
+```
+
+aes(x = after_stat(count/sum(count)))
+
+
+facet_wrap(~`Rating of Online Class experience`)
+

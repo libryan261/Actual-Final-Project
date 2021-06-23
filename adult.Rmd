@@ -1,0 +1,47 @@
+---
+title: "Untitled"
+description: |
+  A new article created using the Distill format.
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+library(janitor)
+library(ggthemes)
+library(data.table)
+library(distill)
+
+
+adult_raw_data <- read_csv("train.csv")
+```
+
+```{r, echo =FALSE}
+
+
+adult_clean_data <- adult_raw_data %>%
+  filter(`WFH Setup Available` %in% c("Yes", "No")) %>%
+  select(`WFH Setup Available`, `Mental Fatigue Score`, `Burn Rate`) %>%
+  group_by(`WFH Setup Available`) %>%
+  drop_na() %>%
+  head(100)
+
+
+adult_clean_data %>%
+  ggplot(mapping = aes(x= `Mental Fatigue Score`, y =`Burn Rate`)) +
+  geom_jitter() +
+  facet_wrap(~`WFH Setup Available`) +
+  geom_smooth(method = "lm", formula = y~x)
+
+```
+
+
+
+
+
+

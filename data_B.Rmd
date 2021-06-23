@@ -1,0 +1,51 @@
+---
+title: "COVID-19 Effect on relationship between Age and Health Issues During Lockdown"
+description: |
+  This one also looks at adults along with students. One of the consequences or side effects of schools/jobs having their work transfer to an online platform is having students or employees locked at home for at least eight hours watching a screen. Especially with the suspension of sports, closing of gyms, this left people without a reliable mean of exercise and having them stay inside all day on their devices. Reasonably, this lead to a spike in health issues among youthWhile this one also includes physical health when looking at Heath Issues, it is still a really important factor to look at along with mental health. After all, physical health issues can also lead to mental health issues. 
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+library(janitor)
+library(ggthemes)
+library(data.table)
+library(distill)
+
+
+
+
+raw_data <- read_csv(file = "COVID-19 Survey Student Responses.csv.xls")
+
+```
+
+
+```{r, echo= FALSE}
+
+age_health_data_group <- raw_data %>%
+  select(`Age of Subject`, `Health issue during lockdown`) %>%
+  group_by(`Age of Subject`) %>%
+  mutate(total_age = n())
+
+
+age_health_data_group["age_group"] = cut(age_health_data_group$`Age of Subject`, c(0, 10, 20, 30, 40, 50, 60), c("0-10", "11-20", "21-30", "31-40", "41-50", "51-60"), include.lowest=TRUE)
+
+age_health_data_group %>%
+  ggplot(mapping = aes(x= age_group, fill = `Health issue during lockdown` ))+
+  geom_bar(aes( y = after_stat(count)), color="black")+
+  theme_fivethirtyeight() +
+  labs(title= "Relationship between Age and Health Issues During Lockdown",
+       subtitle = "A significant portion of new health issues during lockdown have occured more in younger ages than older ages ",
+       x= "Age Group")
+```
+
+
+
+
+
+
