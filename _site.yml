@@ -13,6 +13,12 @@ navbar:
           href: data_A.html
         - text: "Student Data B"
           href: data_B.html
+    - text: "Adult Effect"
+      menu:
+        - text: "Adult Data A"
+          href: adult.html
+        - text: "Adult Data B"
+          href: adult_B.html
     - text: "About"
       href: about.html
 output: distill::distill_article

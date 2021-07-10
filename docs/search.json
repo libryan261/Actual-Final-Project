@@ -6,24 +6,33 @@
       "description": "Some additional details about the website and me",
       "author": [],
       "contents": "\nSources Used\nhttps://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students https://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/ https://www.kaggle.com/blurredmachine/are-your-employees-burning-out?select=train.csv\nAbout Me\nMy name is Bryan Li. I am currently a rising senior at Dublin Coffman High School. Some of my hobbies include playing tennis, playing violin, volunteering in my community, and helping grow myself as a person. This is my first time ever interacting with anytype of code and will be my first project done with code. I plan on adding more to this and make it more of a general page about mental health. If you wanna talk to me or ask any questions, feel free to reach out to me! I will add my handles below. Thank you for viewing my page!\nInsta: _bryanli\nSnap: bli735\n\n\n\n\n\n\n",
-      "last_modified": "2021-06-23T19:47:50-04:00"
+      "last_modified": "2021-06-24T19:42:24-04:00"
+    },
+    {
+      "path": "adult_B.html",
+      "title": "Mental Health of Adults during COVID-19 lockdown",
+      "description": "These graphs below are from KFF (Kaiser Family Foundation). I thought that these graphs and extra information really helps demonstrate the mental effects placed on many from COVID and clearly shows the before and after changes. The first graph shows adults' mental state before COVID and after. The second graph shows symptons expressed by people during the pandemic.\n",
+      "author": [],
+      "date": "`r Sys.Date()`",
+      "contents": "\n\n\n\n\n\n\n\n1\n\nhttps://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/↩︎\n",
+      "last_modified": "2021-06-24T19:42:25-04:00"
     },
     {
       "path": "adult.html",
-      "title": "Untitled",
-      "description": "A new article created using the Distill format.\n",
+      "title": "Relationship Between Working Adults, Their Mental Fatigue Score, and Burn Rate",
+      "description": "The transition to the online environment hasn't only affected students, but also adults as well. Data on a sample of 100 adult employees was taken and analyzed. From the variables taken from the experiment, I chose to compare if they could work from home, each of their mental fatigue score, and their burn rate from working. From the graph below, we can conclude that adults that don't have access working from home tend to have more of a burn rate with roughly the same mental fatigue score.\n",
       "author": [],
       "date": "`r Sys.Date()`",
-      "contents": "\n\n\n\n\n\n\n",
-      "last_modified": "2021-06-23T19:47:56-04:00"
+      "contents": "\n\n\n\n1\n\nhttps://www.kaggle.com/blurredmachine/are-your-employees-burning-out?select=train.csv↩︎\n",
+      "last_modified": "2021-06-24T19:42:31-04:00"
     },
     {
       "path": "data_A.html",
       "title": "Relationship Between Online Class Experience and Self Studying",
       "description": "With schools transitioning into online learning as a result of the pandemic, many students have struggled transitioning into a new learning environment. As a result, lots of students haven't been able to learn the content of a course through the traditional teaching time, which led many to adapt to self-studying and relying on themselves to learn the content. This graph here analyzes the relationship between those who had different Online class experiences and their time spent on self learning the material.\n",
       "author": [],
-      "contents": "\n\n\n\naes(x = after_stat(count/sum(count)))\nfacet_wrap(~Rating of Online Class experience)\n\n\n\n",
-      "last_modified": "2021-06-23T19:47:58-04:00"
+      "contents": "\n\n\n\n1\n\nhttps://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students↩︎\n",
+      "last_modified": "2021-06-24T19:42:34-04:00"
     },
     {
       "path": "data_B.html",
@@ -31,16 +40,16 @@
       "description": "This one also looks at adults along with students. One of the consequences or side effects of schools/jobs having their work transfer to an online platform is having students or employees locked at home for at least eight hours watching a screen. Especially with the suspension of sports, closing of gyms, this left people without a reliable mean of exercise and having them stay inside all day on their devices. Reasonably, this lead to a spike in health issues among youthWhile this one also includes physical health when looking at Heath Issues, it is still a really important factor to look at along with mental health. After all, physical health issues can also lead to mental health issues. \n",
       "author": [],
       "date": "`r Sys.Date()`",
-      "contents": "\n\n\n\n\n\n\n",
-      "last_modified": "2021-06-23T19:48:00-04:00"
+      "contents": "\n\n\n\n1\n\nhttps://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students↩︎\n",
+      "last_modified": "2021-06-24T19:42:36-04:00"
     },
     {
       "path": "index.html",
       "title": "COVID-19 Effects on Mental Health/Behaviors of Both Adults and Students",
       "description": "This is where I will be showcasing my Final Project for David Kane's Free Data Science Bootcamp. For my final project, I wanted to do something that was relatable to me and was something that I experienced throughout the Pandemic because this world event is something that I'll probably only experience once in my lifetime. \n",
       "author": [],
-      "contents": "\nGoals\n*The main goal of this project is to actually create a website that will contain more data about mental health in general. I chose to start with COVID-19 data because it’s the most recent event as to when this website was created. This little bit of data is just a start to more data regarding mental health disorders, treatments, statistics, etc.\n*The goal of this final project though is to see the effects or relationships between the student environment COVID affected and their behaviors.\n\n\n\n",
-      "last_modified": "2021-06-23T19:48:00-04:00"
+      "contents": "\nGoals\nThe main goal of this project is to actually create a website that will contain more data about mental health in general. I chose to start with COVID-19 data because it’s the most recent event as to when this website was created. This little bit of data is just a start to more data regarding mental health disorders, treatments, statistics, etc.\nThe goal of this final project though is to see the effects or relationships between the student environment COVID affected and their behaviors.\n\n\n\n",
+      "last_modified": "2021-06-24T19:42:38-04:00"
     }
   ],
   "collections": []

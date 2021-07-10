@@ -1,7 +1,7 @@
 ---
-title: "Untitled"
+title: "Relationship Between Working Adults, Their Mental Fatigue Score, and Burn Rate"
 description: |
-  A new article created using the Distill format.
+  The transition to the online environment hasn't only affected students, but also adults as well. Data on a sample of 100 adult employees was taken and analyzed. From the variables taken from the experiment, I chose to compare if they could work from home, each of their mental fatigue score, and their burn rate from working. From the graph below, we can conclude that adults that don't have access working from home tend to have more of a burn rate with roughly the same mental fatigue score.
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
@@ -41,7 +41,7 @@ adult_clean_data %>%
 ```
 
 
-
+^[https://www.kaggle.com/blurredmachine/are-your-employees-burning-out?select=train.csv]
 
 
 

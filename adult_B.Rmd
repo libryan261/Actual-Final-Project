@@ -1,0 +1,39 @@
+---
+title: "Mental Health of Adults during COVID-19 lockdown"
+description: |
+  These graphs below are from KFF (Kaiser Family Foundation). I thought that these graphs and extra information really helps demonstrate the mental effects placed on many from COVID and clearly shows the before and after changes. The first graph shows adults' mental state before COVID and after. The second graph shows symptons expressed by people during the pandemic.
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+### 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(distill)
+library(knitr)
+
+```
+
+
+
+```{r ,echo= FALSE}
+
+include_graphics("images/adult2.png")
+
+
+
+
+
+```
+
+```{r, echo=FALSE}
+
+include_graphics("images/adult.png")
+
+
+```
+
+
+^[https://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/]

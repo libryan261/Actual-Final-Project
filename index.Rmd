@@ -7,9 +7,9 @@ site: distill::distill_website
 ---
 ### Goals
 
-*The main goal of this project is to actually create a website that will contain more data about mental health in general. I chose to start with COVID-19 data because it's the most recent event as to when this website was created. This little bit of data is just a start to more data regarding mental health disorders, treatments, statistics, etc. 
+* The main goal of this project is to actually create a website that will contain more data about mental health in general. I chose to start with COVID-19 data because it's the most recent event as to when this website was created. This little bit of data is just a start to more data regarding mental health disorders, treatments, statistics, etc. 
 
-*The goal of this final project though is to see the effects or relationships between the student environment COVID affected and their behaviors.
+* The goal of this final project though is to see the effects or relationships between the student environment COVID affected and their behaviors.
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
