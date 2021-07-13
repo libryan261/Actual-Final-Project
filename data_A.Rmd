@@ -24,7 +24,7 @@ raw_data <- read_csv(file = "COVID-19 Survey Student Responses.csv.xls")
 
 ```{r, echo = FALSE}
 clean_data <- raw_data %>%
-  filter(`Rating of Online Class experience` %in% c("Excellent", "Average", "Good", "Very poor")) %>%
+  filter(`Rating of Online Class experience` %in% c("Excellent", "Average", "Good", "Very poor"))%>%
   mutate(`Rating of Online Class experience` = factor(`Rating of Online Class experience`, levels = vec)) %>%
   select(`Rating of Online Class experience`, `Time spent on self study`) %>%
   group_by(`Rating of Online Class experience`)

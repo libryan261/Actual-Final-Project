@@ -21,7 +21,7 @@ library(distill)
 adult_raw_data <- read_csv("train.csv")
 ```
 
-```{r, echo =FALSE}
+```{r, echo= FALSE}
 
 
 adult_clean_data <- adult_raw_data %>%

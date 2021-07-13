@@ -10,12 +10,6 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 
 library(tidyverse)
-library(lubridate)
-library(ggplot2)
-library(janitor)
-library(ggthemes)
-library(data.table)
-library(distill)
 
 
 
@@ -42,6 +36,8 @@ age_health_data_group %>%
   labs(title= "Relationship between Age and Health Issues During Lockdown",
        subtitle = "A significant portion of new health issues during lockdown have occured more in younger ages than older ages ",
        x= "Age Group")
+
+age_health_data_group <- as.data.frame(age_health_data_group)
 ```
 
 

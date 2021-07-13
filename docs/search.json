@@ -6,7 +6,7 @@
       "description": "Some additional details about the website and me",
       "author": [],
       "contents": "\nSources Used\nhttps://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students https://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/ https://www.kaggle.com/blurredmachine/are-your-employees-burning-out?select=train.csv\nAbout Me\nMy name is Bryan Li. I am currently a rising senior at Dublin Coffman High School. Some of my hobbies include playing tennis, playing violin, volunteering in my community, and helping grow myself as a person. This is my first time ever interacting with anytype of code and will be my first project done with code. I plan on adding more to this and make it more of a general page about mental health. If you wanna talk to me or ask any questions, feel free to reach out to me! I will add my handles below. Thank you for viewing my page!\nInsta: _bryanli\nSnap: bli735\n\n\n\n\n\n\n",
-      "last_modified": "2021-07-10T12:57:08-04:00"
+      "last_modified": "2021-07-13T02:01:22-04:00"
     },
     {
       "path": "adult_B.html",
@@ -15,7 +15,7 @@
       "author": [],
       "date": "`r Sys.Date()`",
       "contents": "\n\n\n\n\n\n\n\n1\n\nhttps://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/↩︎\n",
-      "last_modified": "2021-07-10T12:57:10-04:00"
+      "last_modified": "2021-07-13T02:01:23-04:00"
     },
     {
       "path": "adult.html",
@@ -24,7 +24,7 @@
       "author": [],
       "date": "`r Sys.Date()`",
       "contents": "\n\n\n\n1\n\nhttps://www.kaggle.com/blurredmachine/are-your-employees-burning-out?select=train.csv↩︎\n",
-      "last_modified": "2021-07-10T12:57:14-04:00"
+      "last_modified": "2021-07-13T02:01:28-04:00"
     },
     {
       "path": "data_A.html",
@@ -32,7 +32,7 @@
       "description": "With schools transitioning into online learning as a result of the pandemic, many students have struggled transitioning into a new learning environment. As a result, lots of students haven't been able to learn the content of a course through the traditional teaching time, which led many to adapt to self-studying and relying on themselves to learn the content. This graph here analyzes the relationship between those who had different Online class experiences and their time spent on self learning the material.\n",
       "author": [],
       "contents": "\n\n\n\n1\n\nhttps://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students↩︎\n",
-      "last_modified": "2021-07-10T12:57:18-04:00"
+      "last_modified": "2021-07-13T02:01:31-04:00"
     },
     {
       "path": "data_B.html",
@@ -41,15 +41,15 @@
       "author": [],
       "date": "`r Sys.Date()`",
       "contents": "\n\n\n\n1\n\nhttps://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students↩︎\n",
-      "last_modified": "2021-07-10T12:57:20-04:00"
+      "last_modified": "2021-07-13T02:01:34-04:00"
     },
     {
       "path": "index.html",
-      "title": "COVID-19 Effects on Mental Health/Behaviors of Both Adults and Students",
-      "description": "This is where I will be showcasing my Final Project for David Kane's Free Data Science Bootcamp. For my final project, I wanted to do something that was relatable to me and was something that I experienced throughout the Pandemic because this world event is something that I'll probably only experience once in my lifetime. \n",
+      "title": "General Mental Health Forum",
+      "description": "This will be a website where I will post different findings and relationships on anything mental health related or maybe something that I might just find interesting. Some things that I already have include effects on students form COVID and also effects on some adults. I am currently adding more stuff so stay tuned for more! This started out actually with my final project from David Kane's Data Science Camp and I was interested in continuing with more.\n",
       "author": [],
       "contents": "\nGoals\nThe main goal of this project is to actually create a website that will contain more data about mental health in general. I chose to start with COVID-19 data because it’s the most recent event as to when this website was created. This little bit of data is just a start to more data regarding mental health disorders, treatments, statistics, etc.\nThe goal of this final project though is to see the effects or relationships between the student environment COVID affected and their behaviors.\n\n\n\n",
-      "last_modified": "2021-07-10T12:57:21-04:00"
+      "last_modified": "2021-07-13T02:01:35-04:00"
     }
   ],
   "collections": []

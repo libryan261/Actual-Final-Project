@@ -2,6 +2,7 @@
 title: "General Mental Health Forum"
 description: |
   This will be a website where I will post different findings and relationships on anything mental health related or maybe something that I might just find interesting. Some things that I already have include effects on students form COVID and also effects on some adults. I am currently adding more stuff so stay tuned for more! This started out actually with my final project from David Kane's Data Science Camp and I was interested in continuing with more.
+  
 site: distill::distill_website
 
 ---
@@ -10,8 +11,4 @@ site: distill::distill_website
 * The main goal of this project is to actually create a website that will contain more data about mental health in general. I chose to start with COVID-19 data because it's the most recent event as to when this website was created. This little bit of data is just a start to more data regarding mental health disorders, treatments, statistics, etc. 
 
 * The goal of this final project though is to see the effects or relationships between the student environment COVID affected and their behaviors.
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-
-```
 
