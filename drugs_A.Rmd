@@ -1,0 +1,32 @@
+---
+title: "Suicide and Social Workers"
+author: "Bryan Li"
+date: "7/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(distill)
+```
+
+
+```{r, echo= FALSE}
+raw_data <- read_csv(file = "drug-use-by-age.csv")
+```
+
+```{r}
+clean_data <- raw_data %>%
+  group_by(age) %>%
+  select(`alcohol-use`) %>%
+  mutate(`alcohol-use` = factor(`alcohol-use`))
+
+
+clean_data %>%
+  ggplot( mapping = aes(x = age, y= `alcohol-use`)) +
+  geom_jitter()
+
+
+```
+
