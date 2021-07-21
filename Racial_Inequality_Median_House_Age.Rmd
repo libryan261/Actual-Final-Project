@@ -1,7 +1,6 @@
 ---
 title: "Racial Inequality"
-author: "Bryan Li"
-date: "7/20/2021"
+
 
 output: distill::distill_article
 ---
@@ -14,9 +13,6 @@ library(readr)
 library(Rcpp)
 
 data <- read.csv("racialdata.csv")
-
-
-
 ```
 
 ```{r, echo=FALSE}
@@ -35,5 +31,5 @@ plot(med_house_val~med_home_age, data = data,
      xlab = "Median Home Age", 
      main ="Median House Value and \n Median Home Age \n by Neighborhood")+
 abline(lm(med_house_val~med_home_age, data))
-```
 
+```

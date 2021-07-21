@@ -3,7 +3,7 @@ title: "General Mental Health Forum"
 description: |
   This will be a website where I will post different findings and relationships on anything mental health related or maybe something that I might just find interesting. Some things that I already have include effects on students form COVID and also effects on some adults. I am currently adding more stuff so stay tuned for more! This started out actually with my final project from David Kane's Data Science Camp and I was interested in continuing with more.
   
-output: distill::distill_website
+
 
 ---
 ### Goals

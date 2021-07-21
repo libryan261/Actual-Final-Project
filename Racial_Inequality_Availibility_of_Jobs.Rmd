@@ -1,7 +1,6 @@
 ---
 title: "Racial Inequality"
-author: "Bryan Li"
-date: "7/20/2021"
+
 output: distill::distill_article
 ---
 

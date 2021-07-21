@@ -1,7 +1,6 @@
 ---
 title: "Racial Inequality"
-author: "Bryan Li"
-date: "7/20/2021"
+
 output: distill::distill_article
 ---
 
@@ -26,12 +25,22 @@ data$pop_pct <- data$pop/data$city_pop
 
 data$majority_min <- ifelse((data$white/data$pop) < .5 , 1, 0)
 
-summary(data[data$majority_min == 1,]$med_house_val)
-summary(data[data$majority_min == 0,]$med_house_val)
+
 
 #### By Racial composition of neighborhood
+
+
+
+```
+
+
+```{r, include=FALSE}
 mm = hist(data[data$majority_min == 1,]$med_house_val)
 
+```
+
+
+```{r, echo=FALSE}
 mm$density = mm$counts/sum(mm$counts)*100
 plot(mm,freq = FALSE, xlab = "Median House Value", ylab = "Percent",
      main="Median House Values ($) \n Majority Minority Neighborhoods", 
