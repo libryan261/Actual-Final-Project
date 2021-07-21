@@ -19,6 +19,20 @@ navbar:
           href: adult.html
         - text: "Adult Data B"
           href: adult_B.html
+    - text: "Racial Inequality"
+      menu:
+        - text: "Median House Age"
+          href: Racial Inequality Median House Age.html
+        - text: "Median Number of Rooms"
+          href: Racial Inequality Median Rooms.html
+        - text: "Local School Quality"
+          href: Racial Inequality Local School Quality.html
+        - text: "Availibility of Jobs"
+          href: Racial Inequality Availibility of Jobs.html
+        - text: "Socioeconomic Factors"
+          href: Racial Inequality Socioeconomic Factors.html
+        - text: "Majority Minority Neighborhoods"
+          href: Racial Inequality Majority Minority Neighborhoods.html
     - text: "About"
       href: about.html
 output: distill::distill_article
