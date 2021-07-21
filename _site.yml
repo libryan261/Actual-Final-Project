@@ -22,17 +22,17 @@ navbar:
     - text: "Racial Inequality"
       menu:
         - text: "Median House Age"
-          href: Racial Inequality Median House Age.html
+          href: Racial_Inequality_Median_House_Age.html
         - text: "Median Number of Rooms"
-          href: Racial Inequality Median Rooms.html
+          href: Racial_Inequality_Median_Rooms.html
         - text: "Local School Quality"
-          href: Racial Inequality Local School Quality.html
+          href: Racial_Inequality_Local_School_Quality.html
         - text: "Availibility of Jobs"
-          href: Racial Inequality Availibility of Jobs.html
+          href: Racial_Inequality_Availibility_of_Jobs.html
         - text: "Socioeconomic Factors"
-          href: Racial Inequality Socioeconomic Factors.html
+          href: Racial_Inequality_Socioeconomic_Factors.html
         - text: "Majority Minority Neighborhoods"
-          href: Racial Inequality Majority Minority Neighborhoods.html
+          href: Racial_Inequality_Majority_Minority_Neighborhoods.html
     - text: "About"
       href: about.html
 output: distill::distill_article

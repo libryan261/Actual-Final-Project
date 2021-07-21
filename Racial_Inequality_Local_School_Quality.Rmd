@@ -1,0 +1,39 @@
+---
+title: "Racial Inequality"
+author: "Bryan Li"
+date: "7/20/2021"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+
+library(tidyverse)
+library(readr)
+library(Rcpp)
+
+data <- read.csv("racialdata.csv")
+
+
+
+
+```
+
+```{r, echo=FALSE}
+data$med_home_age <- 2021 - data$med_yrBuilt 
+data$pop_density <- data$pop/data$area
+data$city_pop <- sum(data$pop)
+data$pop_pct <- data$pop/data$city_pop
+
+
+data$majority_min <- ifelse((data$white/data$pop) < .5 , 1, 0)
+
+options(scipen = 6) # no scientific notation in graphs
+plot(med_house_val~r_ed_nat, data = data, 
+     ylab = "Median House Value (dollars)", 
+     xlab = "Local School Quality", 
+     main ="Median House Value and \n Local School Quality \n by Neighborhood")
+abline(lm(med_house_val~r_ed_nat, data))
+```
+

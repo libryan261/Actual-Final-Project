@@ -30,7 +30,7 @@ include_graphics("images/adult2.png")
 
 ```{r, echo=FALSE}
 
-include_graphics("images/adult.png")
+include_graphics("images/adult.webp")
 
 
 ```

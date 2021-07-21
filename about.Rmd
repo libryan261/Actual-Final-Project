@@ -2,6 +2,8 @@
 title: "About this site"
 description: |
   Some additional details about the website and me
+  
+output: distill::distill_article
 ---
 ### Sources Used
 https://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students
