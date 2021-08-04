@@ -1,6 +1,9 @@
 ---
-title: "Racial Inequality"
-
+title: "Racial Inequality - Socioeconomic Factors"
+description: |
+ The variable here is socioeconomic factors and how it affects the median house value. Data was taken from the Childhood Opportunity Index which is measured through a census tract level, giving a general view of the resources and conditions surrounding a child. This index primarily looks at the prominent features of neighborhoods that affect children. One of these includes the education quality. The data captures from 2010 to 2015.
+ 
+ https://data.diversitydatakids.org/dataset/coi20-child-opportunity-index-2-0-database
 output: distill::distill_article
 ---
 
@@ -15,6 +18,9 @@ data <- read.csv("racialdata.csv")
 
 
 ```
+
+
+### Graph
 
 ```{r, echo=FALSE}
 data$med_home_age <- 2021 - data$med_yrBuilt 
@@ -33,3 +39,22 @@ plot(med_house_val~r_se_nat, data = data,
 abline(lm(med_house_val~r_se_nat, data))
 ```
 
+
+### Results
+
+```{r}
+include_graphics("images/social.jpg")
+```
+
+Looking at socioeconomic factors, there is a positive relationship with the median house value. Having the house value increasing by around $651.74 every time there is an increase on socioeconomic factor index given from The Childhood Opportunity Index.
+
+```{r}
+include_graphics("images/sociostats.jpg")
+```
+
+The R-squared value is .5838 showing that over 50% of our data lines up with a best fit line calculated from a linear regression model. The P-value is really small and under our alpha level showing that there is good evidence to claim that our alternative hypothesis is true.
+
+
+### Conclusion
+
+We can conclude that the socioeconomic factors in relation to the median house value in a neighborhood has a lot of influence from the difference of race in home buyers.

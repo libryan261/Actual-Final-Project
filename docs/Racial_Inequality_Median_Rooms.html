@@ -86,26 +86,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Final Project: Racial Inequality</title>
+  <title>Final Project: Racial Inequality- Median Number of Rooms</title>
 
+  <meta property="description" itemprop="description" content="The data was taken from the IPUMS National Geographic Information System. The Median Number of Rooms data was merged using state, county and tract 2015-2019 American Community Survey.&#10;&#10;https://www.nhgis.org/"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Final Project: Racial Inequality"/>
+  <meta property="og:title" content="Final Project: Racial Inequality- Median Number of Rooms"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="The data was taken from the IPUMS National Geographic Information System. The Median Number of Rooms data was merged using state, county and tract 2015-2019 American Community Survey.&#10;&#10;https://www.nhgis.org/"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Final Project"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Final Project: Racial Inequality"/>
+  <meta property="twitter:title" content="Final Project: Racial Inequality- Median Number of Rooms"/>
+  <meta property="twitter:description" content="The data was taken from the IPUMS National Geographic Information System. The Median Number of Rooms data was merged using state, county and tract 2015-2019 American Community Survey.&#10;&#10;https://www.nhgis.org/"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Racial Inequality"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Racial Inequality- Median Number of Rooms"]},{"type":"character","attributes":{},"value":["The data was taken from the IPUMS National Geographic Information System. The Median Number of Rooms data was merged using state, county and tract 2015-2019 American Community Survey.\n\nhttps://www.nhgis.org/\n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2050,7 +2053,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Racial Inequality","authors":[]}
+{"title":"Racial Inequality- Median Number of Rooms","description":"The data was taken from the IPUMS National Geographic Information System. The Median Number of Rooms data was merged using state, county and tract 2015-2019 American Community Survey.\n\nhttps://www.nhgis.org/","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2091,6 +2094,9 @@ Racial Inequality
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
+<a href="racial_inequality_about.html">About</a>
+<a href="data_transformation.html">Data Sources and Transformation</a>
+<a href="Methods.html">Methods Used</a>
 <a href="Racial_Inequality_Median_House_Age.html">Median House Age</a>
 <a href="Racial_Inequality_Median_Rooms.html">Median Number of Rooms</a>
 <a href="Racial_Inequality_Local_School_Quality.html">Local School Quality</a>
@@ -2109,17 +2115,30 @@ Racial Inequality
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Racial Inequality</h1>
+<h1>Racial Inequality- Median Number of Rooms</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>The data was taken from the IPUMS National Geographic Information System. The Median Number of Rooms data was merged using state, county and tract 2015-2019 American Community Survey.</p>
+<p><a href="https://www.nhgis.org/" class="uri">https://www.nhgis.org/</a></p></p>
 </div>
 
 
 <div class="d-article">
+<h3 id="graph">Graph</h3>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="Racial_Inequality_Median_Rooms_files/figure-html5/unnamed-chunk-1-1.png" width="624" /></p>
 </div>
+<h3 id="results">Results</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/rooms.jpg" /><!-- --></p>
+</div>
+<p>Here looking at the median number of rooms variable, it is clear that there is a positive relationship with the median house value. On average, each increase in rooms tends to increase the house value by $15,673.38.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/numberofrooms.jpg" /><!-- --></p>
+</div>
+<p>Again, we are given the R squared and p-value. R-squared being at .3603 shows that 36% of our data lines up with a linear regression line. Our p-value also being super small and below our alpha level shows that we have statistically significant evidence to establish a correlation.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>We are able to conclude that the median number of rooms in a house was significant in affecting the median house value as well as that there is an effect of race in these variables.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

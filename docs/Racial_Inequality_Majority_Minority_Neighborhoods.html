@@ -86,26 +86,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Final Project: Racial Inequality</title>
+  <title>Final Project: Racial Inequality - Majority Minority Neighboorhoods</title>
 
+  <meta property="description" itemprop="description" content="This data was merged using state, county and tract 2015-2019 American Community Survey from IPUMS NHGIS&#10;&#10;https://www.nhgis.org/"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Final Project: Racial Inequality"/>
+  <meta property="og:title" content="Final Project: Racial Inequality - Majority Minority Neighboorhoods"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="This data was merged using state, county and tract 2015-2019 American Community Survey from IPUMS NHGIS&#10;&#10;https://www.nhgis.org/"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Final Project"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Final Project: Racial Inequality"/>
+  <meta property="twitter:title" content="Final Project: Racial Inequality - Majority Minority Neighboorhoods"/>
+  <meta property="twitter:description" content="This data was merged using state, county and tract 2015-2019 American Community Survey from IPUMS NHGIS&#10;&#10;https://www.nhgis.org/"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["Racial Inequality"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Racial Inequality - Majority Minority Neighboorhoods"]},{"type":"character","attributes":{},"value":["This data was merged using state, county and tract 2015-2019 American Community Survey from IPUMS NHGIS\n\nhttps://www.nhgis.org/\n"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2050,7 +2053,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Racial Inequality","authors":[]}
+{"title":"Racial Inequality - Majority Minority Neighboorhoods","description":"This data was merged using state, county and tract 2015-2019 American Community Survey from IPUMS NHGIS\n\nhttps://www.nhgis.org/","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2091,6 +2094,9 @@ Racial Inequality
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
+<a href="racial_inequality_about.html">About</a>
+<a href="data_transformation.html">Data Sources and Transformation</a>
+<a href="Methods.html">Methods Used</a>
 <a href="Racial_Inequality_Median_House_Age.html">Median House Age</a>
 <a href="Racial_Inequality_Median_Rooms.html">Median Number of Rooms</a>
 <a href="Racial_Inequality_Local_School_Quality.html">Local School Quality</a>
@@ -2109,20 +2115,33 @@ Racial Inequality
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Racial Inequality</h1>
+<h1>Racial Inequality - Majority Minority Neighboorhoods</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>This data was merged using state, county and tract 2015-2019 American Community Survey from IPUMS NHGIS</p>
+<p><a href="https://www.nhgis.org/" class="uri">https://www.nhgis.org/</a></p></p>
 </div>
 
 
 <div class="d-article">
+<h3 id="graph">Graph</h3>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="Racial_Inequality_Majority_Minority_Neighborhoods_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
 </div>
+<h3 id="results">Results</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/majority.jpg" /><!-- --></p>
+</div>
+<p>Clearly, we can see that when the minority makes up most of the particular neighborhood, the median house value tends to decrease. On average, it decreases by $22,213. That alone kind of shows the great disparity between racial differences in the housing market.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="images/majoritystats.jpg" /><!-- --></p>
+</div>
+<p>Roughly 26% of our data lines with a linear regression line according to the R-squared value. Additionally, our p-value is below our alpha level showing that there’s a good amount of evidence to not have racial differences be a factor in this relationship.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Based on the data we analyzed above, it is safe to say that the relationship between Majority Minority Neighborhoods and Median House value is greatly affected by racial differences and racial inequality in the housing market.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

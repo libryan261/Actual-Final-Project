@@ -1,6 +1,8 @@
 ---
-title: "Racial Inequality"
-
+title: "Racial Inequality - Availibility of Jobs"
+description: |
+ Here we examine how the variable of Availibility of jobs impacts the Median House Value. This data was taken using HUD Affirmatively Furthering Fair Housing Data and Tools from the Urban Institute. In July of 2015, the US Department of Housing and Urban Development enacted the AFFH requirement. After releasing this rule, they publicly shared data and resources that state governments could use to help treat these disparities. 
+ https://datacatalog.urban.org/dataset/data-and-tools-fair-housing-planning
 output: distill::distill_article
 ---
 
@@ -10,11 +12,16 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(readr)
 library(Rcpp)
+library(knitr)
+
 
 data <- read.csv("racialdata.csv")
 
 
 ```
+
+
+### Graph
 
 ```{r, echo=FALSE}
 data$med_home_age <- 2021 - data$med_yrBuilt 
@@ -33,3 +40,33 @@ plot(med_house_val~jobs_idx, data = data,
 abline(lm(med_house_val~jobs_idx, data))
 ```
 
+
+### Results
+
+Below are the statistical regression analysis results that we've concluded.
+
+
+```{r}
+include_graphics("images/jobs.jpg")  
+```
+
+
+This one as we can see shows that as each unit of jobs goes up, the value of the house increases by roughly $639
+
+
+
+```{r}
+include_graphics("images/jobstats.jpg")
+```
+
+
+
+We can see here the R squared value, which says how many of the data points can be explained by the best fit line. Additionally, the p-value is given and is above the alpha level.
+
+
+
+
+### Conclusion
+
+
+Based on the results and graphs that we made, we do not have statistically significant evidence to say that the availability of jobs and the median value of homes are affected by racial inequality.

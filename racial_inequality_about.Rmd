@@ -1,0 +1,15 @@
+---
+title: "About Racial Inequality"
+output: distill::distill_article
+---
+
+### Description
+This section is quite different than what this website is mainly about. However, this summer I was able to conduct research with The Federal Bank of Cleveland. During my time as a student researcher, I looked into Racial Inequality specifically with the housing market. I was placed in a group of other students my age and it was lead by a research analyst named Cornelius Johnson. We employed a few strategies. We looked at differing variables—like the local quality of education, home age, population density—and analyzed how they might contribute to the value of a house in a neighborhood. But at the end of the day, we found that no matter the jobs index or the environmental quality, a neighborhood’s racial composition stood out and continued to be a determining factor in its median house value.
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+

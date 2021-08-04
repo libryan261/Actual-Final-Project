@@ -1,0 +1,23 @@
+---
+title: "Methods"
+output: distill::distill_article
+---
+
+
+
+### What we used
+Our group used a multiple linear regression method in order to look into the racial inequality in the housing market. The regression equation that we used was Y = a + B1X1  + B2X2 + B3X3 + B4X4 + .... The “Y” in the equation is the outcome so in our case it's the median house value. The “a” is the intercept in the equation. The “B” are the slope parameters and the “X” are the independent variables.
+
+X1 - median number of rooms
+X2 - the median home age
+X3 - the education quality
+X4 - the jobs index
+X5 - the health and environment quality
+X6 - the social and economic quality
+X7 - the population density
+X8 - the majority minority
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+

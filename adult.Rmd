@@ -36,7 +36,11 @@ adult_clean_data %>%
   ggplot(mapping = aes(x= `Mental Fatigue Score`, y =`Burn Rate`)) +
   geom_jitter() +
   facet_wrap(~`WFH Setup Available`) +
-  geom_smooth(method = "lm", formula = y~x)
+  geom_smooth(method = "lm", formula = y~x) +
+  labs( title = "How are adult employees burning out?",
+        subtitle = "More adults who don't have access to working from home are buring out faster than adults who do",
+        x = "Mental Fatigue Score",
+        y = "Burn Rate")
 
 ```
 

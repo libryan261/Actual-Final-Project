@@ -21,6 +21,12 @@ navbar:
           href: adult_B.html
     - text: "Racial Inequality"
       menu:
+        - text: "About"
+          href: racial_inequality_about.html
+        - text: "Data Sources and Transformation"
+          href: data_transformation.html
+        - text: "Methods Used"
+          href: Methods.html
         - text: "Median House Age"
           href: Racial_Inequality_Median_House_Age.html
         - text: "Median Number of Rooms"

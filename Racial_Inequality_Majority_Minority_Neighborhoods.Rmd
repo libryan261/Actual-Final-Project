@@ -1,6 +1,9 @@
 ---
-title: "Racial Inequality"
-
+title: "Racial Inequality - Majority Minority Neighboorhoods"
+description: |
+ This data was merged using state, county and tract 2015-2019 American Community Survey from IPUMS NHGIS
+ 
+ https://www.nhgis.org/
 output: distill::distill_article
 ---
 
@@ -15,6 +18,9 @@ data <- read.csv("racialdata.csv")
 
 
 ```
+
+
+### Graph
 
 ```{r, echo=FALSE}
 data$med_home_age <- 2021 - data$med_yrBuilt 
@@ -51,3 +57,22 @@ plot(mm,freq = FALSE, xlab = "Median House Value", ylab = "Percent",
 )
 ```
 
+
+### Results
+
+```{r}
+include_graphics("images/majority.jpg")
+```
+
+Clearly, we can see that when the minority makes up most of the particular neighborhood, the median house value tends to decrease. On average, it decreases by $22,213. That alone kind of shows the great disparity between racial differences in the housing market.
+
+```{r}
+include_graphics("images/majoritystats.jpg")
+```
+
+Roughly 26% of our data lines with a linear regression line according to the R-squared value. Additionally, our p-value is below our alpha level showing that there's a good amount of evidence to not have racial differences be a factor in this relationship.
+
+
+### Conclusion
+
+Based on the data we analyzed above, it is safe to say that the relationship between Majority Minority Neighborhoods and Median House value is greatly affected by racial differences and racial inequality in the housing market. 

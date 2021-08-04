@@ -1,6 +1,9 @@
 ---
-title: "Racial Inequality"
-
+title: "Racial Inequality - Local School Quality"
+description: |
+ The variable that we are analyzing here is the the local school quality in a particular neighborhood and how it affects the median house value. The data was taken from a Childhood Opportunity Index which is a index that is measured through a census tract level. This index gives a view of the neighborhood resources and conditions surronding a child. This index primarily looks at the prominent features of neighborhoods that affect children. One of these includes the education quality. The data captures from 2010 to 2015.
+ 
+ https://data.diversitydatakids.org/dataset/coi20-child-opportunity-index-2-0-database
 output: distill::distill_article
 ---
 
@@ -11,6 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(readr)
 library(Rcpp)
+library(knitr)
 
 data <- read.csv("racialdata.csv")
 
@@ -18,6 +22,9 @@ data <- read.csv("racialdata.csv")
 
 
 ```
+
+
+### Graph
 
 ```{r, echo=FALSE}
 data$med_home_age <- 2021 - data$med_yrBuilt 
@@ -36,3 +43,23 @@ plot(med_house_val~r_ed_nat, data = data,
 abline(lm(med_house_val~r_ed_nat, data))
 ```
 
+
+### Results
+
+```{r}
+include_graphics("images/education.jpg")
+```
+
+Looking at this, we can see that there is a positive relationship with education quality and the median house value of a home. As the education quality increases by one on the index, the average price increase of the home value is around $572.
+
+
+```{r}
+include_graphics("images/educationstats.jpg")
+```
+
+
+With these statistics, we are given the R squared value and the p-value. We can see that the R squared value is around 50% which signals that roughly 50% of the data can be explained by the best fit line. The p-value is extremely small and below our alpha value which tells us that this data isn't statistically significant. 
+
+### Conclusion
+
+With the data and stats provided, we can say that there is enough statistically signicant evidence to say that the education quality and the median house value is in part due to racial inequality in the housing market.

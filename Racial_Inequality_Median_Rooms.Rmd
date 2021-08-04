@@ -1,6 +1,9 @@
 ---
-title: "Racial Inequality"
-
+title: "Racial Inequality- Median Number of Rooms"
+description: |
+ The data was taken from the IPUMS National Geographic Information System. The Median Number of Rooms data was merged using state, county and tract 2015-2019 American Community Survey.
+ 
+ https://www.nhgis.org/
 output: distill::distill_article
 ---
 
@@ -15,6 +18,9 @@ data <- read.csv("racialdata.csv")
 
 
 ```
+
+
+### Graph
 
 ```{r, echo=FALSE}
 data$med_home_age <- 2021 - data$med_yrBuilt 
@@ -34,3 +40,23 @@ abline(lm(med_house_val~med_room, data))
 
 ```
 
+
+### Results
+
+```{r}
+include_graphics("images/rooms.jpg")
+```
+
+Here looking at the median number of rooms variable, it is clear that there is a positive relationship with the median house value. On average, each increase in rooms tends to increase the house value by $15,673.38.
+
+
+```{r}
+include_graphics("images/numberofrooms.jpg")
+```
+
+Again, we are given the R squared and p-value. R-squared being at .3603 shows that 36% of our data lines up with a linear regression line. Our p-value also being super small and below our alpha level shows that we have statistically significant evidence to establish a correlation.
+
+
+### Conclusion
+
+We are able to conclude that the median number of rooms in a house was significant in affecting the median house value as well as that there is an effect of race in these variables.

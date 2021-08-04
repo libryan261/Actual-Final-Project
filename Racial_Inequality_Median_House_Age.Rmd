@@ -1,7 +1,9 @@
 ---
 title: "Racial Inequality"
-
-
+description: |
+ This data was as well merged using state, county and tract from the IPUMS NHGIS 2015-2019 American Community Survey 
+ 
+ https://www.nhgis.org/
 output: distill::distill_article
 ---
 
@@ -14,6 +16,9 @@ library(Rcpp)
 
 data <- read.csv("racialdata.csv")
 ```
+
+
+### Graph
 
 ```{r, echo=FALSE}
 data$med_home_age <- 2021 - data$med_yrBuilt 
@@ -33,3 +38,22 @@ plot(med_house_val~med_home_age, data = data,
 abline(lm(med_house_val~med_home_age, data))
 
 ```
+
+
+### Results
+
+```{r}
+include_graphics("images/homeage.jpg")
+```
+
+Looking at the median home age, there is a clear negative relationship with the median house value. This makes sense as older houses would typically have lower values due to factors like technology, number of owners, condition, etc. On average, each year a house gets older the value of the house decreases by $838.74.
+
+```{r}
+include_graphics("images/homeagestats.jpg")
+```
+
+Glancing at the stats above, we can focus on the R-squared value and the p-value. Having the R-squared value being around 32%, 32% of our data can be explained by the regression analysis and the line it created. Our p-value is however really low, low enough to be below our alpha level which gives us evidence with our null and alternative statements.
+
+### Conclusion
+
+Based on the linear regression that was run between the two variables, we can see that with the p-value below our alpha level it signals that there is evidence to claim that there is an influence by racial differences on the relationship of the varibles.
