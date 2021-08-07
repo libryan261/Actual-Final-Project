@@ -40,6 +40,8 @@ navbar:
           href: Racial_Inequality_Socioeconomic_Factors.html
         - text: "Majority Minority Neighborhoods"
           href: Racial_Inequality_Majority_Minority_Neighborhoods.html
+        - text: "Results"
+          href: results.html
     - text: "About"
       href: about.html
 output: distill::distill_article

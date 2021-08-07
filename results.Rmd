@@ -1,0 +1,23 @@
+---
+title: "Results and Discussion"
+output: distill::distill_article
+---
+
+### What Can We Conclude?
+
+Looking at all the variables that affected Median House Value, we saw that even while controlling for other variables, there was still a significant difference in terms of House Value comparing neighborhoods that were mostly consisted of Minority groups and neighborhoods that were mostly consisted of those who were white. There was around a $22,213.17 difference on average. With this data, we can conclude that there is still a lot of racial inequity in the housing market that not only economists, but also we need to pay attention to.
+
+
+### Discussion
+
+Obviously our data wasn't representative of everyone and everywhere where there is racial inequality in the housing market. The limits to our data is a critique that we have. With next steps in this study, we can add new variables and get a more detailed picture of the housing market and everything that's has a lurking affect. Some stuff that can get us unexpected results include the environmental factors and home characteristics. These were not really accounted for in our study but can most certainly influence a lot.
+
+
+### What to do and Policy implications
+
+The first thing we want to look into is are these results just specific to Cleveland, Ohio? Would different cities have vastly different results? Getting deeper into the topic we want to explore the differing experiences in these minority groups that live in Majority Minority neighborhoods. Do some minorities tend to have a greater house value than others? What exactly affects this? Does it create a lesser or greater value? As it goes for policy implications, we want to see policies that help combat discriminatory house appraisals at the local, regional, and federal levels. In Columbus, Ohio, this would involve the Mid-Ohio Regional Planning Committee pushing for more housing development to help fight inequality. This has been a really aggressive move by requiring affordable elements in many neighborhoods. A policy like this ensures that geographical elements don't constrain economic mobility. Another policy implication is Down Payment Assistance. This would help with affordability for low income families and increase home ownership rates that would help with house value. Higher house value in Minority neighborhoods would help close the gap in the housing market.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
