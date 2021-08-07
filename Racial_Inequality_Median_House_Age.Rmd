@@ -1,5 +1,5 @@
 ---
-title: "Racial Inequality"
+title: "Racial Inequality - Median House Age"
 description: |
  This data was as well merged using state, county and tract from the IPUMS NHGIS 2015-2019 American Community Survey 
  
@@ -56,4 +56,4 @@ Glancing at the stats above, we can focus on the R-squared value and the p-value
 
 ### Conclusion
 
-Based on the linear regression that was run between the two variables, we can see that with the p-value below our alpha level it signals that there is evidence to claim that there is an influence by racial differences on the relationship of the varibles.
+Based on the linear regression that was run between the two variables, we can see that with the p-value below our alpha level it signals that there is evidence to claim that there is a correlation between the House Age and the House Value.

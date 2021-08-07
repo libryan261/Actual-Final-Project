@@ -75,4 +75,4 @@ Roughly 26% of our data lines with a linear regression line according to the R-s
 
 ### Conclusion
 
-Based on the data we analyzed above, it is safe to say that the relationship between Majority Minority Neighborhoods and Median House value is greatly affected by racial differences and racial inequality in the housing market. 
+Based on the data we analyzed above, it is safe to say that the relationship between Majority Minority Neighborhoods and Median House value is correlated and the race majority in the neighborhood greatly affects the house value.

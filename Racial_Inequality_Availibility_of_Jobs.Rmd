@@ -69,4 +69,4 @@ We can see here the R squared value, which says how many of the data points can 
 ### Conclusion
 
 
-Based on the results and graphs that we made, we do not have statistically significant evidence to say that the availability of jobs and the median value of homes are affected by racial inequality.
+Based on the results and graphs that we made, we do not have statistically significant evidence to say that the availability of jobs and the median value of homes are correlated with one another.

@@ -62,4 +62,4 @@ With these statistics, we are given the R squared value and the p-value. We can 
 
 ### Conclusion
 
-With the data and stats provided, we can say that there is enough statistically signicant evidence to say that the education quality and the median house value is in part due to racial inequality in the housing market.
+With the data and stats provided, we can say that there is enough statistically significant evidence to say that the education quality and the median house value is correlated with each other and that a change the quality of education does create a change in the median house value.

@@ -57,4 +57,4 @@ The R-squared value is .5838 showing that over 50% of our data lines up with a b
 
 ### Conclusion
 
-We can conclude that the socioeconomic factors in relation to the median house value in a neighborhood has a lot of influence from the difference of race in home buyers.
+We can conclude that the socioeconomic factors in relation to the median house value in a neighborhood is correlated with one another and that there any changes in one should change the other.
