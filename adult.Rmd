@@ -21,7 +21,7 @@ library(distill)
 adult_raw_data <- read_csv("train.csv")
 ```
 
-```{r, echo= FALSE}
+```{r, echo= FALSE, fig.height= 3, fig.width = 8}
 
 
 adult_clean_data <- adult_raw_data %>%
@@ -43,6 +43,10 @@ adult_clean_data %>%
         y = "Burn Rate")
 
 ```
+
+### Interpretation
+
+Before looking at the graph to show the results, I would expect employees at home to burn out more than employees at an office setting because with sitting at home for long periods of time and feeling "trapped" inside their houses. Surprisingly, the results showed that employees that didn't have access and have to work at an office actually have a higher mental fatigue score and a faster burn rate. With both categories very high, it shows that home working workers feel tired faster and more doing their job than others who work in person.
 
 
 ^[https://www.kaggle.com/blurredmachine/are-your-employees-burning-out?select=train.csv]

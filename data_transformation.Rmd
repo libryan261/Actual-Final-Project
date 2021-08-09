@@ -19,7 +19,7 @@ output: distill::distill_article
 
  Median Home Value - The average value of a home in a neighborhood
  
-Alpha Level = 0.1
+Alpha Level = 0.01
 
 Null hypothesis - The relationship between the independent and dependent variables aren't influenced by racial differences
 

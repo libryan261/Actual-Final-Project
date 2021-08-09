@@ -5,7 +5,7 @@ description: |
 output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE }
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(lubridate)
@@ -22,15 +22,19 @@ raw_data <- read_csv(file = "COVID-19 Survey Student Responses.csv.xls")
 
 ```
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.height= 3, fig.width = 9}
+
+vec <- c("Very poor", "Average", "Good", "Excellent")
+vec_updated <- factor(vec)
+
 clean_data <- raw_data %>%
   filter(`Rating of Online Class experience` %in% c("Excellent", "Average", "Good", "Very poor"))%>%
   mutate(`Rating of Online Class experience` = factor(`Rating of Online Class experience`, levels = vec)) %>%
   select(`Rating of Online Class experience`, `Time spent on self study`) %>%
   group_by(`Rating of Online Class experience`)
-  
-  
 
+
+  
 
 clean_data %>%
   ggplot(mapping = aes( x = `Time spent on self study`, fill = `Rating of Online Class experience`))+
@@ -46,15 +50,16 @@ clean_data %>%
 
 
 
-vec <- c("Very poor", "Average", "Good", "Excellent")
-  
 
-
-vec_updated <- factor(vec)
 
 
 
 ```
+
+### Interpretation 
+
+Before graphing the data, the topic of experience in class versus the time spent studying was one that was super interesting because it was a topic that I've personally experienced and I'm sure many others. As a hypothesis, I predicted that the lesser experience they get from their online classes would result in a greater amount of time studied; however, when graphing this set of data, the results said else wise. While there were some subjects that did have results like I predicted, the majority or most of the students spent the same amount of time studying regardless of their online class experience. They all approximately spent 2.5 hours on self study. 
+
 
 ^[https://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students]
 

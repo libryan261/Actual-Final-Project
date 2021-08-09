@@ -10,8 +10,13 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 
 library(tidyverse)
-
-
+library(lubridate)
+library(ggplot2)
+library(janitor)
+library(ggthemes)
+library(data.table)
+library(distill)
+library(ggdist)
 
 
 raw_data <- read_csv(file = "COVID-19 Survey Student Responses.csv.xls")
@@ -19,7 +24,7 @@ raw_data <- read_csv(file = "COVID-19 Survey Student Responses.csv.xls")
 ```
 
 
-```{r, echo= FALSE}
+```{r, echo= FALSE, fig.height= 3, fig.width = 8}
 
 age_health_data_group <- raw_data %>%
   select(`Age of Subject`, `Health issue during lockdown`) %>%
@@ -32,7 +37,7 @@ age_health_data_group["age_group"] = cut(age_health_data_group$`Age of Subject`,
 age_health_data_group %>%
   ggplot(mapping = aes(x= age_group, fill = `Health issue during lockdown` ))+
   geom_bar(aes( y = after_stat(count)), color="black")+
-  theme_fivethirtyeight() +
+  theme_classic() +
   labs(title= "Relationship between Age and Health Issues During Lockdown",
        subtitle = "A significant portion of new health issues during lockdown have occured more in younger ages than older ages ",
        x= "Age Group")
@@ -40,6 +45,9 @@ age_health_data_group %>%
 age_health_data_group <- as.data.frame(age_health_data_group)
 ```
 
+### Interpretation
+
+Before analyzing the data set and graphing the data, I hypothesized that the older the health group, the more health issues would occur because with aging, people's immune system weakens leading to more invulnerability to diseases and illnesses; however, with this data set, it wasn't really clear if this was the case or not. This data gave more of the ratio of health issues in it's own group compared to the number of general health issues during the lockdown. Additionally, this graph shows that there were way more 11-20 and 21-30 year olds surveyed than other other age group which can be misleading. For a more definitive answer, there has to be more data and an equal count of age group surveyed.
 
 ^[https://www.kaggle.com/kunal28chaturvedi/covid19-and-its-impact-on-students]
 

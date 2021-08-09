@@ -28,6 +28,11 @@ include_graphics("images/adult2.png")
 
 ```
 
+
+### Interpretation
+
+The bar graph is pretty self explanatory. It accounts for adults and if they have anxiety or depression before the COVID pandemic hit and after. Obviously, it shows that from the time spent in the pandemic and lockdown, it jumped almost 30% in the amount of adults that have reported symptoms of these mental disorders.
+
 ```{r, echo=FALSE}
 
 include_graphics("images/adult.webp")
@@ -35,5 +40,9 @@ include_graphics("images/adult.webp")
 
 ```
 
+
+### Interpretation
+
+This bar graph is also very explanatory in itself. It just shows how high of an amount of adults report these mental health issue symptoms during the COVID lockdown and also visualizes the effect that these events have taken on mental health.
 
 ^[https://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/]
