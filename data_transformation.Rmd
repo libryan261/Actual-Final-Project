@@ -7,12 +7,19 @@ output: distill::distill_article
 ***Independent Variables*** - These were the different factors that we changed 
 
  Median Number of Rooms - The average number of rooms of the houses 
+ 
  Median Home Age - The average age of a home 
+ 
  White/Black Population in Neighborhood - Proportion of White/Black population in a neighborhood
+ 
  Health & Environmental Quality -  A measure of the health and environmental quality in a neighborhood
+ 
  Education Quality -  A measure of education quality in a neighborhood
+ 
  Jobs Index -  A measure of job accessibility in a neighborhood
+ 
  Social and Economic Quality -  A measure of social and economic quality an in a neighborhood
+ 
  Population Density - The amount of people on average in an area in the neighborhood
 
 ***Dependent Variable*** -

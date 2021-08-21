@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(readr)
 library(Rcpp)
+library(knitr)
 
 data <- read.csv("racialdata.csv")
 
@@ -35,12 +36,16 @@ options(scipen = 6) # no scientific notation in graphs
 plot(med_house_val~r_se_nat, data = data, 
      ylab = "Median House Value (dollars)", 
      xlab = "Socioeconomic Factors", 
-     main ="Median House Value and \n Socioeconomic Factors \n by Neighborhood")
+     main ="Median House Value and \n Socioeconomic Factors \n by Neighborhood", col = "cadetblue")
 abline(lm(med_house_val~r_se_nat, data))
 ```
 
 
 ### Results
+
+
+Below are the statistical regression analysis results that we've concluded.
+
 
 ```{r}
 include_graphics("images/social.jpg")

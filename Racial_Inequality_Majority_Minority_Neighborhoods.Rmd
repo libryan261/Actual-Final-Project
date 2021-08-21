@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(readr)
 library(Rcpp)
+library(knitr)
 
 data <- read.csv("racialdata.csv")
 
@@ -48,17 +49,22 @@ mm = hist(data[data$majority_min == 1,]$med_house_val)
 
 ```{r, echo=FALSE}
 mm$density = mm$counts/sum(mm$counts)*100
-plot(mm,freq = FALSE, xlab = "Median House Value", ylab = "Percent",
+plot(mm,freq = FALSE, xlab = "Median House Value", ylab = "Percent", col = "darkorchid",
      main="Median House Values ($) \n Majority Minority Neighborhoods", 
      xaxs="i", 
      yaxs="i",
      xlim = c(20000, 510000),
-     ylim=c(0,60)
+     ylim=c(0,60), alpha = 0.5
 )
 ```
 
 
 ### Results
+
+
+Below are the statistical regression analysis results that we've concluded.
+
+
 
 ```{r}
 include_graphics("images/majority.jpg")

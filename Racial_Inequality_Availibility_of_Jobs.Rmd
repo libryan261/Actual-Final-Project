@@ -36,12 +36,14 @@ options(scipen = 6) # no scientific notation in graphs
 plot(med_house_val~jobs_idx, data = data, 
      ylab = "Median House Value (dollars)", 
      xlab = "Availiblity of Jobs", 
-     main ="Median House Value and \n Availibility of Jobs \n by Neighborhood")
+     main ="Median House Value and \n Availibility of Jobs \n by Neighborhood", col = "darkolivegreen")
 abline(lm(med_house_val~jobs_idx, data))
 ```
 
 
 ### Results
+
+
 
 Below are the statistical regression analysis results that we've concluded.
 

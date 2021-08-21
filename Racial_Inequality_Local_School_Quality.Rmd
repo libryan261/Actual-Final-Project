@@ -39,12 +39,16 @@ options(scipen = 6) # no scientific notation in graphs
 plot(med_house_val~r_ed_nat, data = data, 
      ylab = "Median House Value (dollars)", 
      xlab = "Local School Quality", 
-     main ="Median House Value and \n Local School Quality \n by Neighborhood")
+     main ="Median House Value and \n Local School Quality \n by Neighborhood", col = "darkgoldenrod3")
 abline(lm(med_house_val~r_ed_nat, data))
 ```
 
 
 ### Results
+
+
+Below are the statistical regression analysis results that we've concluded.
+
 
 ```{r}
 include_graphics("images/education.jpg")

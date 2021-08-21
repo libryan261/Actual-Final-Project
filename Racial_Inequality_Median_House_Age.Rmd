@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(readr)
 library(Rcpp)
+library(knitr)
 
 data <- read.csv("racialdata.csv")
 ```
@@ -34,13 +35,17 @@ options(scipen = 6) # no scientific notation in graphs
 plot(med_house_val~med_home_age, data = data, 
      ylab = "Median House Value (dollars)", 
      xlab = "Median Home Age", 
-     main ="Median House Value and \n Median Home Age \n by Neighborhood")+
+     main ="Median House Value and \n Median Home Age \n by Neighborhood", col = "darkred")+
 abline(lm(med_house_val~med_home_age, data))
 
 ```
 
 
 ### Results
+
+
+Below are the statistical regression analysis results that we've concluded.
+
 
 ```{r}
 include_graphics("images/homeage.jpg")
