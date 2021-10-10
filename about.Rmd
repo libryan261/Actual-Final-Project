@@ -31,8 +31,12 @@ library(knitr)
 
 ```
 
-```{r, echo=FALSE}
 
+```{r}
+include_graphics("images/certificate.jpg")
+```
+
+```{r, echo=FALSE}
 include_graphics("images/image.jpg")
 ```
 
